@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>shreyasuuuu 💗</title>
+  <title>Shreyasuuuuuuuuuuuu 💗</title>
   <style>
     body {
       text-align: center;
       font-family: Arial, sans-serif;
-      margin-top: 120px;
+      margin-top: 100px;
       background-color: #ffe6f0;
+      transition: 0.5s;
     }
 
     h1 {
@@ -15,7 +16,7 @@
     }
 
     h2 {
-      margin-bottom: 40px;
+      margin-bottom: 30px;
     }
 
     button {
@@ -37,20 +38,44 @@
       color: white;
       position: absolute;
     }
+
+    .small-text {
+      font-size: 14px;
+      opacity: 0.7;
+      margin-top: 20px;
+    }
   </style>
 </head>
 
 <body>
 
-  <h1>shreyasuuuu 🥺💗</h1>
+  <h1>Shreyasuuuuuuuuuuu 🥺💗</h1>
   <h2>Will you meet me this month?</h2>
+
+  <p class="small-text">
+    Side effects may include intense eye contact, unexpected hugs, and mild nervousness.
+  </p>
 
   <button id="yes" onclick="sayYes()">YES 💞</button>
   <button id="no" onmouseover="moveButton()">NO</button>
 
   <script>
     function sayYes() {
-      alert("Don’t worry.. I won’t bite you much 🙈");
+      document.body.innerHTML = `
+        <h1>Meeting Confirmed 💫</h1>
+
+        <p>First real eye contact: Loading… 👀</p>
+        <p>Hug probability: High 🤗</p>
+        <p>Kiss probability: Classified 😌</p>
+
+        <p>Nervous level: 82% (normal for first meetings)</p>
+        <p>Excitement level: 100% 🔥</p>
+
+        <p style="margin-top:30px;">
+        Relax… I promise I’m not scary.  
+        Just slightly adorable and mildly dangerous 🙈
+        </p>
+      `;
     }
 
     function moveButton() {
