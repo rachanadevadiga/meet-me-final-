@@ -1,31 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Shreyasuuuuuuuuuuuu 💗</title>
+  <title>shreyasuuuu 💗</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
       text-align: center;
       font-family: Arial, sans-serif;
-      margin-top: 100px;
       background-color: #ffe6f0;
-      transition: 0.5s;
+      margin: 0;
+      padding: 20px;
     }
 
     h1 {
-      font-size: 40px;
+      font-size: 32px;
+      margin-bottom: 10px;
     }
 
     h2 {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .small-text {
+      font-size: 14px;
+      opacity: 0.7;
       margin-bottom: 30px;
+      max-width: 300px;
     }
 
     button {
-      padding: 15px 30px;
-      font-size: 20px;
-      border-radius: 12px;
+      padding: 18px 40px;
+      font-size: 18px;
+      border-radius: 15px;
       border: none;
       cursor: pointer;
       margin: 10px;
+      min-width: 140px;
     }
 
     #yes {
@@ -38,18 +56,12 @@
       color: white;
       position: absolute;
     }
-
-    .small-text {
-      font-size: 14px;
-      opacity: 0.7;
-      margin-top: 20px;
-    }
   </style>
 </head>
 
 <body>
 
-  <h1>Shreyasuuuuuuuuuuu 🥺💗</h1>
+  <h1>Shreyasuuuu 🥺💗</h1>
   <h2>Will you meet me this month?</h2>
 
   <p class="small-text">
@@ -68,18 +80,22 @@
         <p>Hug probability: High 🤗</p>
         <p>Kiss probability: Classified 😌</p>
 
-        <p>Nervous level: 82% (normal for first meetings)</p>
+        <p>Nervous level: 82%</p>
         <p>Excitement level: 100% 🔥</p>
 
-        <p>Don’t worry… I promise I won’t bite you.</p>
-<p>And definitely no bite marks. Probably. 🙈</p>
+        <p style="margin-top:30px;">
+        Don’t worry… I promise I won’t bite you.
+        </p>
+        <p>
+        And definitely no bite marks. Probably. 🙈
+        </p>
       `;
     }
 
     function moveButton() {
       var button = document.getElementById("no");
-      button.style.top = Math.random() * 400 + "px";
-      button.style.left = Math.random() * 400 + "px";
+      button.style.top = Math.random() * window.innerHeight + "px";
+      button.style.left = Math.random() * window.innerWidth + "px";
     }
   </script>
 
