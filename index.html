@@ -1,103 +1,114 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>shreyasuuuu 💗</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Shreyas 💗</title>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e8cfd6;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
 
-  <style>
-    body {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      text-align: center;
-      font-family: Arial, sans-serif;
-      background-color: #ffe6f0;
-      margin: 0;
-      padding: 20px;
-    }
+.container {
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+}
 
-    h1 {
-      font-size: 32px;
-      margin-bottom: 10px;
-    }
+h1 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
 
-    h2 {
-      font-size: 20px;
-      margin-bottom: 20px;
-    }
+h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
 
-    .small-text {
-      font-size: 14px;
-      opacity: 0.7;
-      margin-bottom: 30px;
-      max-width: 300px;
-    }
+p {
+  font-size: 14px;
+  margin-bottom: 25px;
+  color: #444;
+}
 
-    button {
-      padding: 18px 40px;
-      font-size: 18px;
-      border-radius: 15px;
-      border: none;
-      cursor: pointer;
-      margin: 10px;
-      min-width: 140px;
-    }
+button {
+  padding: 14px 28px;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  margin: 10px;
+}
 
-    #yes {
-      background-color: #ff4da6;
-      color: white;
-    }
+#yes {
+  background-color: #ff4da6;
+  color: white;
+}
 
-    #no {
-      background-color: grey;
-      color: white;
-      position: absolute;
-    }
-  </style>
+#no {
+  background-color: grey;
+  color: white;
+  position: absolute;
+}
+</style>
 </head>
 
 <body>
 
+<div class="container">
   <h1>Shreyasuuuu 🥺💗</h1>
   <h2>Will you meet me this month?</h2>
 
-  <p class="small-text">
-    Side effects may include intense eye contact, unexpected hugs, and mild nervousness.
-  </p>
+  <p>Side effects may include intense eye contact, unexpected hugs, and mild nervousness.</p>
 
-  <button id="yes" onclick="sayYes()">YES 💞</button>
-  <button id="no" onmouseover="moveButton()">NO</button>
+  <button id="yes" onclick="sayYes()">YES 💕</button>
+  <button id="no" onmouseover="moveButton()" onclick="sayNo()">NO</button>
+</div>
 
-  <script>
-    function sayYes() {
-      document.body.innerHTML = `
-        <h1>Meeting Confirmed 💫</h1>
+<script>
 
-        <p>First real eye contact: Loading… 👀</p>
-        <p>Hug probability: High 🤗</p>
-        <p>Kiss probability: Classified 😌</p>
+function sayYes() {
+  document.body.innerHTML = `
+    <div style="display:flex;justify-content:center;align-items:center;height:100vh;background:#e8cfd6;text-align:center;padding:20px;">
+      <div>
+        <h1>Meeting Confirmed 😌💗</h1>
+        <p>Don’t worry… I promise I won’t bite you.</p>
+        <p>And definitely no bite marks. Probably. 🙈</p>
+        <p>Warning: Eye contact may cause heart malfunction. 💓</p>
+      </div>
+    </div>
+  `;
+}
 
-        <p>Nervous level: 82%</p>
-        <p>Excitement level: 100% 🔥</p>
+function sayNo() {
+  document.body.innerHTML = `
+    <div style="display:flex;justify-content:center;align-items:center;height:100vh;background:#e8cfd6;text-align:center;padding:20px;">
+      <div>
+        <h1>Nachige apuje mulpala 😏</h1>
+        <p>No panare? Pokade podu YES press manpule 💗</p>
+        <button onclick="location.reload()" style="padding:14px 28px;font-size:16px;border:none;border-radius:12px;background:#ff4da6;color:white;">
+          Okay okay 😅
+        </button>
+      </div>
+    </div>
+  `;
+}
 
-        <p style="margin-top:30px;">
-        Don’t worry… I promise I won’t bite you.
-        </p>
-        <p>
-        And definitely no bite marks. Probably. 🙈
-        </p>
-      `;
-    }
+function moveButton() {
+  var button = document.getElementById("no");
+  button.style.top = Math.random() * window.innerHeight + "px";
+  button.style.left = Math.random() * window.innerWidth + "px";
+}
 
-    function moveButton() {
-      var button = document.getElementById("no");
-      button.style.top = Math.random() * window.innerHeight + "px";
-      button.style.left = Math.random() * window.innerWidth + "px";
-    }
-  </script>
+</script>
 
 </body>
 </html>
