@@ -1,78 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>For Shreyas 💗</title>
-
-<style>
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #e8cfd6;
-  font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  text-align: center;
-}
-
-.container {
-  padding: 20px;
-  width: 90%;
-  max-width: 400px;
-}
-
-h1 {
-  font-size: 32px;
-  margin-bottom: 15px;
-}
-
-h2 {
-  font-size: 20px;
-  margin-bottom: 15px;
-}
-
-p {
-  font-size: 14px;
-  margin-bottom: 25px;
-  color: #444;
-}
-
-button {
-  padding: 14px 28px;
-  font-size: 16px;
-  border: none;
-  border-radius: 12px;
-  cursor: pointer;
-  margin: 10px;
-}
-
-#yes {
-  background-color: #ff4da6;
-  color: white;
-}
-
-#no {
-  background-color: grey;
-  color: white;
-  position: absolute;
-}
-</style>
-</head>
-
-<body>
-
-<div class="container">
-  <h1>Shreyasuuuu 🥺💗</h1>
-  <h2>Will you meet me this month?</h2>
-
-  <p>Side effects may include intense eye contact, unexpected hugs, and mild nervousness.</p>
-
-  <button id="yes" onclick="sayYes()">YES 💕</button>
-  <button id="no" onmouseover="moveButton()" onclick="sayNo()">NO</button>
-</div>
-
 <script>
 
 function sayYes() {
@@ -92,8 +17,9 @@ function sayNo() {
   document.body.innerHTML = `
     <div style="display:flex;justify-content:center;align-items:center;height:100vh;background:#e8cfd6;text-align:center;padding:20px;">
       <div>
-        <h1>Nachige apuje mulpala 😏</h1>
-        <p>No panare? Pokade podu YES press manpule 💗</p>
+        <h1>No panera? 😏</h1>
+        <p>Nachige apuje mulpala…</p>
+        <p>Pokade podu YES press manpule 💗</p>
         <button onclick="location.reload()" style="padding:14px 28px;font-size:16px;border:none;border-radius:12px;background:#ff4da6;color:white;">
           Okay okay 😅
         </button>
@@ -104,11 +30,13 @@ function sayNo() {
 
 function moveButton() {
   var button = document.getElementById("no");
-  button.style.top = Math.random() * window.innerHeight + "px";
-  button.style.left = Math.random() * window.innerWidth + "px";
+
+  var x = Math.random() * (window.innerWidth - 100);
+  var y = Math.random() * (window.innerHeight - 50);
+
+  button.style.position = "absolute";
+  button.style.left = x + "px";
+  button.style.top = y + "px";
 }
 
 </script>
-
-</body>
-</html>
