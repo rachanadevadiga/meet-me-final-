@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>shreyasuuuu 💗</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      margin-top: 120px;
+      background-color: #ffe6f0;
+    }
+
+    h1 {
+      font-size: 40px;
+    }
+
+    h2 {
+      margin-bottom: 40px;
+    }
+
+    button {
+      padding: 15px 30px;
+      font-size: 20px;
+      border-radius: 12px;
+      border: none;
+      cursor: pointer;
+      margin: 10px;
+    }
+
+    #yes {
+      background-color: #ff4da6;
+      color: white;
+    }
+
+    #no {
+      background-color: grey;
+      color: white;
+      position: absolute;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>shreyasuuuu 🥺💗</h1>
+  <h2>Will you meet me this month?</h2>
+
+  <button id="yes" onclick="sayYes()">YES 💞</button>
+  <button id="no" onmouseover="moveButton()">NO</button>
+
+  <script>
+    function sayYes() {
+      alert("Good choice 😌 See you soon!");
+    }
+
+    function moveButton() {
+      var button = document.getElementById("no");
+      button.style.top = Math.random() * 400 + "px";
+      button.style.left = Math.random() * 400 + "px";
+    }
+  </script>
+
+</body>
+</html>
